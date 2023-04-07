@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from flask import Flask
 
 #TODO - incluir biblioteca para manipular GPIO, ex: https://pythonhosted.org/python-periphery/
@@ -22,4 +23,4 @@ def led1Off():
     return 'LED1 - OFF'
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
