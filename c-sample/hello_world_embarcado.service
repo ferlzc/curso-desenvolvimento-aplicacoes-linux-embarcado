@@ -1,0 +1,13 @@
+[Unit]
+Description=Hello World Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/hello_world_embarcado
+Restart=always
+RestartSec=2
+Reload=on-failure
+
+[Install]
+WantedBy=multi-user.target
