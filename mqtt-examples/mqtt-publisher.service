@@ -1,0 +1,13 @@
+[Unit]
+Description=Mqtt publisher exemplo
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/mqtt-publisher.py
+Restart=always
+RestartSec=2
+Reload=on-failure
+
+[Install]
+WantedBy=multi-user.target
